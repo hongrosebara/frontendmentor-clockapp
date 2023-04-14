@@ -1,3 +1,23 @@
 /* ------------------- */
 /* Utility classes       */
 /* ------------------- */
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: var(--pd-wrapper);
+}
+
+.top-box {
+  &__inner {
+    @apply flex flex-col items-start justify-between;
+  }
+}
+
+.bottom-box {
+  @apply bg-light opacity-75 text-dark half-screen;
+}
+
+.half-screen {
+  height: 50vh;
+}

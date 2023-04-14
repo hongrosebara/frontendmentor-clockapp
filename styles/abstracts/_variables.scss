@@ -30,8 +30,12 @@
   --fs-400: 1.953rem;
   --fs-500: 2.441rem;
 
+  --fs-quote: 0.8rem;
+  --fs-time: 6.25rem;
+
   /* Paddings */
   --pd-container: calc(12px + 1.5625vw);
+  --pd-wrapper: 2rem 1.5rem;
   --gap-unit: calc(8px + 1.5625vw);
   --gap-unit-50: 2rem;
   --gap-unit-100: 4rem;
@@ -40,17 +44,22 @@
 
   @include respond(sm) {
     --gap-unit-150: 7.5rem;
+    --pd-wrapper: 4rem 4rem;
+    --fs-quote: 1.25rem;
+    --fs-time: 10rem;
   }
 
   @include respond(md) {
     /* Padding */
     --pd-container: 4rem 10rem;
+    --pd-wrapper: 3rem 10rem;
     --gap-unit-100: 10rem;
     --gap-unit-150: 10rem;
   }
 
   @include respond(lg) {
     --base-font-size: 18px;
+    --fs-time: 12.5rem;
   } 
   
   /* font-families */

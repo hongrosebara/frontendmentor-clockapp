@@ -21,7 +21,8 @@ module.exports = {
         'hover-1': 'var(--clr-hover-1)',
         'hover-2': 'var(--clr-hover-2)',
         'hover-3': 'var(--clr-hover-3)',
-        light: 'var(--clr-light)'
+        light: 'var(--clr-light)',
+        dark: 'var(--clr-dark)'
       },
       textColor: {
         primary: 'var(--clr-primary)',
@@ -32,7 +33,8 @@ module.exports = {
         'hover-1': 'var(--clr-hover-1)',
         'hover-2': 'var(--clr-hover-2)',
         'hover-3': 'var(--clr-hover-3)',
-        light: 'var(--clr-light)'
+        light: 'var(--clr-light)',
+        dark: 'var(--clr-dark)'
       },
       fontSize: {
         xs: 'var(--fs-200)',

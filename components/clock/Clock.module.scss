@@ -1,0 +1,101 @@
+.clock-container {
+  --bg-image: url("/assets/desktop/bg-image-daytime.jpg");
+  --bg-image-opacity: 0.5;
+
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  color: var(--clr-white);
+  isolation: isolate;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #000;
+    background-image: var(--bg-image);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: var(--bg-image-opacity);
+    z-index: -1;
+  }
+}
+
+.clock {
+  &__quote-box {
+    width: 60%;
+  }
+
+  &__quote {
+    margin-bottom: 1rem;
+    font-size: var(--fs-quote);
+  }
+
+  &__author {
+    @apply font-bold;
+  }
+
+  &__time-box {
+    @apply w-full flex flex-col gap-4;
+  }
+
+  &__greeting-box {
+    @apply flex items-center justify-start;
+  }
+
+  &__greeting {
+    margin-left: 0.5rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+
+  &__time {
+    font-weight: 700;
+    font-size: var(--fs-time);
+    line-height: 1;
+    letter-spacing: -5px;
+
+    & span {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 40px;
+      letter-spacing: normal;
+    }
+  }
+
+  &__info {
+    @apply flex justify-between;
+  }
+}
+
+.timezone-box {
+  @apply h-full grid grid-cols-2;
+  margin: 0 auto;
+
+  & div {
+    @apply flex flex-col justify-between items-start;
+  }
+
+  & div h2 {
+    font-size: 13px;
+    line-height: 28px;
+    letter-spacing: 2.6px;
+    text-transform: uppercase;
+    color: #303030;
+  }
+
+  & div p {
+    font-weight: 700;
+    font-size: 40px;
+  }
+}
+
+.timezone-left {
+  --border: 1px solid rgb(0, 0, 0, 0.5);
+
+  @screen md {
+    border-right: var(--border);
+  }
+}
